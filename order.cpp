@@ -12,35 +12,8 @@
 #include<stdint.h>
 #include <bits/stdc++.h>
 
-#define originFile "/home/ye/Desktop/codes/liveJournal/liveJournal.txt"
-#define processedFile "/home/ye/Desktop/codes/liveJournal/liveJournal_pro.txt"
-
-
-/*
-------small size------
-#define originFile "correct.txt"
-#define processedFile "correct_pro.txt"
-#define originFile "/home/ye/Desktop/codes/facebook/facebook.txt"
-#define processedFile "/home/ye/Desktop/codes/facebook/facebook_pro.txt"
-------local------
-#define originFile "/home/ye/Desktop/codes/youtube/youtube.txt"
-#define processedFile "/home/ye/Desktop/codes/youtube/youtube_pro.txt"
-#define originFile "/home/ye/Desktop/codes/skitter/skitter.txt"
-#define processedFile "/home/ye/Desktop/codes/skitter/skitter_pro.txt"
-#define originFile "/home/ye/Desktop/codes/liveJournal/liveJournal.txt"
-#define processedFile "/home/ye/Desktop/codes/liveJournal/liveJournal_pro.txt"
-#define originFile "/home/ye/Desktop/codes/orkut/orkut.txt"
-#define processedFile "/home/ye/Desktop/codes/orkut/orkut_pro.txt"
-#define originFile "/home/ye/Desktop/codes/dblp/dblp.txt"
-#define processedFile "/home/ye/Desktop/codes/dblp/dblp_pro.txt"
-------server only------
-#define originFile "friendster.txt"
-#define processedFile "friendster_pro.txt"
-#define originFile "web-ClueWeb09.edges"
-#define processedFile "clue09_pro.txt"
-#define originFile "/home/ye/Desktop/codes/wikiTalk/WikiTalk.txt"
-#define processedFile "/home/ye/Desktop/codes/wikiTalk/WikiTalk_pro.txt"
-*/
+#define originFile "data.txt"
+#define processedFile "data_pro.txt"
 
 using namespace std;
 
@@ -78,7 +51,7 @@ void cleanData(){
     //memset(id,-1,idsize*sizeof(int));
     map<long,int> id;
     while(getline(fin,lineC)){
-        //if(lineC[0]<'0' && lineC[0]>'9') continue;
+        if(lineC[0]<'0' && lineC[0]>'9') continue;
 
         ss << lineC;
         ss >> a;
